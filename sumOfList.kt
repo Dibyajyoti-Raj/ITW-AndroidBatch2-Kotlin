@@ -4,6 +4,8 @@ fun main()
     var x = readLine() ?: "5"
     val n = x.toInt()
     
+    //val n = readLine()?.toInt() ?: 5
+
     val r = sum(n)
     println("Sum of list = $r")
     

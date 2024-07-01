@@ -1,43 +1,33 @@
-*class bankAccount(var accountHolder : String, var balance : Double){
+class BankAccount {
     
-    private val transaction = mutableListOf<String>()
+    var accountNumber: Int = 0
+    var balance: Double = 0.0
     
-    fun deposit(amount:Double){
+    fun deposit(amount: Double) {
         balance += amount
-        transaction.add("$accountHolder deposited $$amount")
     }
     
-    fun withdraw(amount:Double){
-        if(amount <= balance)
-        {
-            //can withdraw
+    fun withdraw(amount: Double) {
+        if (amount <= balance) {
             balance -= amount
-            transaction.add("$accountHolder withdrawed the $amount.")
-        }
-        else
-        {
-            println("You don't have the fund to withdraw the  amoney")
+        } else {
+            println("You don't have enough funds to withdraw the amount")
         }
     }
-    fun displayTransactions()
-    {
-        print("TRansaction history are: ")
-        for(item in transaction)
-        {
-            println(item)
-        }
+    
+    fun displayTransactions() {
+        println("Amount in account number $accountNumber is $balance")
     }
 }
 
 fun main() {
-//  val myBankAccount = bankAccount("Ruxtz", 17500.0)   
-//  println(myBankAccount.accountHolder)
-//  myBankAccount.deposit(2000.0)
-//  myBankAccount.withdraw(5000.00)
-//  myBankAccount.displayTransactions()
-//  println("Present bank amount: ${myBankAccount.balance}")
+    // Initialize the array with instances of BankAccount
+    val accounts = Array(3) { BankAccount() }
     
-    val numbers: Array<Int> = Array(100) { it + 1 } 
-    for(i in numbers)
-    println(i)
+    // Perform operations on the first account
+    accounts[0].deposit(895963.50630)
+    accounts[0].deposit(88965.26)
+    accounts[0].displayTransactions()
+    accounts[0].withdraw(500000.0)
+    accounts[0].displayTransactions()
 }
