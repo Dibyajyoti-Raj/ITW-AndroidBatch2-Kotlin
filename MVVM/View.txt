@@ -1,0 +1,27 @@
+package com.example.android_mvvm
+
+
+import androidx.compose.runtime.State
+import androidx.compose.runtime.mutableStateOf
+import androidx.lifecycle.ViewModel
+
+//class View(){
+//
+//}
+
+class CounterViewModel: ViewModel() {
+    private val _counter = mutableStateOf(Counter(0))
+    val counter: State<Counter> = _counter
+
+    fun incrementCounter(){
+        _counter.value = Counter(_counter.value.count + 1)
+    }
+
+    fun decrementCounter(){
+        _counter.value = Counter(_counter.value.count - 1)
+    }
+
+    fun reset(){
+        _counter.value = Counter(_counter.value.count - _counter.value.count)
+    }
+}
