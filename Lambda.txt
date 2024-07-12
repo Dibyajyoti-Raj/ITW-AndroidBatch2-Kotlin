@@ -1,0 +1,29 @@
+fun main() {
+    // val sum = {x:Int, y:Int -> x + y}
+    // val mul = {x:Int, y:Int -> x * y}
+    val result = operation(5, 5) { x, y -> x }
+    println("Result: $result")
+    println("Sum: " + operation(2, 7) { x, y -> x + y })
+    println("Multiplication: " + operation(2, 7) { x, y -> x * y })
+}
+
+fun operation(x: Int, y: Int, operate: (Int, Int) -> Int): Int {
+    return operate(x, y)
+}
+
+
+
+// fun main() {
+//     val callBack = { println("inside callback") }
+//     val result1 = doW(2, callBack)
+//     val result2 = doW(2){println("inside callback")}
+//     println("Result: $callBack")
+//     println("Result: $result1")
+//     println("Result: $result2")
+// }
+
+// fun doW(x: Int, callBack: () -> Unit): Int {
+//     println("Call from Do.")
+//     callBack()
+//     return 2 * x
+// }
