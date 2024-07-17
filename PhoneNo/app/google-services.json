@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "968130380721",
+    "project_id": "firebs-bbd75",
+    "storage_bucket": "firebs-bbd75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968130380721:android:a25533331959d66339f390",
+        "android_client_info": {
+          "package_name": "com.example.firebs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARvajaGKs3-q24XZJFEo55NMny_c3ZnPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968130380721:android:9e26d298175a1ac939f390",
+        "android_client_info": {
+          "package_name": "com.example.firebsphone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARvajaGKs3-q24XZJFEo55NMny_c3ZnPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968130380721:android:cdd21d4b5630402939f390",
+        "android_client_info": {
+          "package_name": "com.example.phoneno"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARvajaGKs3-q24XZJFEo55NMny_c3ZnPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

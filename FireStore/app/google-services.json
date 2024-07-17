@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "471039668624",
+    "project_id": "fbbeginner-a2499",
+    "storage_bucket": "fbbeginner-a2499.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471039668624:android:bb3fb4bc58bb9e4f13c315",
+        "android_client_info": {
+          "package_name": "com.example.firestore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBya9kFUAuG5jiJOu2xonThlhRp7q134Bc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
